@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-db {
+    background-color: #062863;
+  }
+}
+
+@layer components {
+  .btn-main {
+    @apply btn bg-main hover:bg-[#0c3c77] text-white mt-2;
+  }
+  .btn-err {
+    @apply btn-outline text-main border rounded-md ms-3 btn-md hover:text-white hover:bg-red-600 transition-all duration-300 font-bold border-main;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
